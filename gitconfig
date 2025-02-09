@@ -1,0 +1,12 @@
+[user]
+	email = ianhenderson@pm.me
+	name  = Ian Henderson
+
+[alias]
+	a  = add
+	br = branch
+	cl = clone
+	cm = commit
+	d  = diff
+	p  = push
+	s  = status
