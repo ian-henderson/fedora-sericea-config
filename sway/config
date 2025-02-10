@@ -17,7 +17,7 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term foot
+set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -264,17 +264,16 @@ bindsym $mod+r mode "resize"
 ### CUSTOM
 #
 
-exec --no-startup-id source ~/.bash_profile
-exec --no-startup-id source ~/.bashrc
+# exec_always --no-startup-id source ~/.bash_profile
 
 # Fonts
-font pango:Adwaita Mono 11
-exec_always /home/ian/Developer/system_config/set_fonts.sh >> /home/ian/.config/sway/logs/set_fonts 2>&1
+font pango:Fira Mono 11
+exec_always /home/ian/Developer/system_config/scripts/set_fonts.sh >> /home/ian/.config/sway/logs/set_fonts 2>&1
 
-exec_always /home/ian/.config/sway/gammastep.sh	>> /home/ian/.config/sway/logs/gammastep 2>&1
-exec_always /home/ian/.config/sway/wallpaper.sh >> /home/ian/.config/sway/logs/wallpaper 2>&1
+exec /home/ian/.config/sway/gammastep.sh >> /home/ian/.config/sway/logs/gammastep 2>&1
+exec /home/ian/.config/sway/wallpaper.sh >> /home/ian/.config/sway/logs/wallpaper 2>&1
 
-bindsym $mod+t exec /home/ian/Developer/system_config/toggle_theme.sh >> /home/ian/.config/sway/logs/toggle_theme 2>&1
+bindsym $mod+t exec /home/ian/Developer/system_config/scripts/toggle_theme.sh >> /home/ian/.config/sway/logs/toggle_theme 2>&1
 bindsym $mod+Shift+t exec /home/ian/.config/sway/wallpaper.sh >> /home/ian/.config/sway/logs/wallpaper 2>&1
 
 # Startup Apps

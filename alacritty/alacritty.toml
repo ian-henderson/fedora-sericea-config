@@ -1,0 +1,9 @@
+# https://alacritty.org/config-alacritty.html
+# https://github.com/alacritty/alacritty-theme
+
+[general]
+import = [ "/home/ian/.config/alacritty/themes/catppuccin_latte.toml" ]
+
+[font]
+normal = { family = "Fira Mono" }
+size = 18
