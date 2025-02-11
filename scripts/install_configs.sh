@@ -15,7 +15,7 @@ for f in "${home_dotfiles[@]}"; do
 	source_file="$parent_dir/$f"
 	target_file="$HOME/.$f"
 
-	if [[ -e "$target_file" ]]; then
+	if [[ -f "$target_file" ]] || [[ -L "$target_file" ]]; then
 		rm "$target_file"
 	fi
 
@@ -26,7 +26,7 @@ done
 
 bashrcd="$HOME/.bashrc.d"
 
-if [[ -e "$bashrcd" ]]; then 
+if [[ -d "$bashrcd" ]] || [[ -L "$bashrcd" ]]; then 
 	rm -rf "$bashrcd"
 fi
 
@@ -54,7 +54,7 @@ for d in "${config_dirs[@]}"; do
 	source_dir="$parent_dir/$d"
 	target_dir="$config/$d"
 
-	if [[ -e "$target_dir" ]]; then
+	if [[ -d "$target_dir" ]] || [[ -L "$target_dir" ]]; then
 		rm -rf "$target_dir"
 	fi
 

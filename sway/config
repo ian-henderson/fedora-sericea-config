@@ -267,7 +267,7 @@ bindsym $mod+r mode "resize"
 # exec_always --no-startup-id source ~/.bash_profile
 
 # Fonts
-font pango:Fira Mono 11
+font pango:Iosevka Extended 11
 exec_always /home/ian/Developer/system_config/scripts/set_fonts.sh >> /home/ian/.config/sway/logs/set_fonts 2>&1
 
 exec /home/ian/.config/sway/gammastep.sh >> /home/ian/.config/sway/logs/gammastep 2>&1

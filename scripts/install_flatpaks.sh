@@ -22,7 +22,6 @@ flatpak install -y \
 	io.missioncenter.MissionCenter \
 	me.timschneeberger.GalaxyBudsClient \
 	org.gnome.Boxes \
-	org.gnome.Evince \
 	org.gnome.Papers \
 	org.gnome.baobab \
 	org.mozilla.firefox \

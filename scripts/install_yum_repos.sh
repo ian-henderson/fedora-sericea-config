@@ -8,7 +8,7 @@ fi
 for repo in "$PWD/../yum.repos.d"/*; do
 	target="/etc/yum.repos.d/$(basename "$repo")"
 
-	if [[ -e "$target" ]]; then
+	if [[ -f "$target" ]] || [[ -L "$target" ]]; then
 		sudo rm "$target"
 	fi
 

@@ -5,7 +5,7 @@ if [[ -n "$TOOLBOX_PATH" ]]; then
 	exit 1
 fi
 
-theme_file="$SYSTEM_CONFIG/theme"
+theme_file="$FEDORA_SERICEA_CONFIG/theme"
 
 if [[ -e "$theme_file" ]]; then
 	read theme < "$theme_file"
@@ -17,4 +17,4 @@ else
 	echo "dark" > "$theme_file"
 fi
 
-$SYSTEM_CONFIG/scripts/set_theme.sh
+$FEDORA_SERICEA_CONFIG/scripts/set_theme.sh

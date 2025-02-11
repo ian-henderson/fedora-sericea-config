@@ -11,7 +11,7 @@ if [[ -e "$variables" ]]; then
 	source "$variables"
 fi
 
-theme_file="$SYSTEM_CONFIG/theme"
+theme_file="$FEDORA_SERICEA_CONFIG/theme"
 
 if [[ -e "$theme_file" ]]; then
 	read theme < "$theme_file"
