@@ -2,7 +2,7 @@
 # https://github.com/alacritty/alacritty-theme
 
 [general]
-import = [ "/home/ian/.config/alacritty/themes/catppuccin_mocha.toml" ]
+import = [ "/home/ian/.config/alacritty/themes/catppuccin_latte.toml" ]
 
 [font]
 normal = { family = "Iosevka Extended" }

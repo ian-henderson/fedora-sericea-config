@@ -7,7 +7,7 @@ fi
 
 dnf_conf="/etc/dnf/dnf.conf"
 
-if [[ -e "$dnf_conf" ]]; then
+if [[ -f "$dnf_conf" ]] || [[ -L "$dnf_conf" ]]; then
 	sudo rm "$dnf_conf"
 fi
 

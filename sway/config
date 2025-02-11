@@ -264,17 +264,18 @@ bindsym $mod+r mode "resize"
 ### CUSTOM
 #
 
-# exec_always --no-startup-id source ~/.bash_profile
+exec_always --no-startup-id source ~/.bash_profile
+set $fedora_sericea_config /home/ian/Developer/fedora-sericea-config
 
 # Fonts
 font pango:Iosevka Extended 11
-exec_always /home/ian/Developer/system_config/scripts/set_fonts.sh >> /home/ian/.config/sway/logs/set_fonts 2>&1
+exec_always $fedora_sericea_config/scripts/set_fonts.sh >> $fedora_sericea_config/sway/logs/set_fonts 2>&1
 
-exec /home/ian/.config/sway/gammastep.sh >> /home/ian/.config/sway/logs/gammastep 2>&1
-exec /home/ian/.config/sway/wallpaper.sh >> /home/ian/.config/sway/logs/wallpaper 2>&1
+exec $fedora_sericea_config/sway/gammastep.sh >> $fedora_sericea_config/sway/logs/gammastep 2>&1
+exec $fedora_sericea_config/sway/wallpaper.sh >> $fedora_sericea_config/sway/logs/wallpaper 2>&1
 
-bindsym $mod+t exec /home/ian/Developer/system_config/scripts/toggle_theme.sh >> /home/ian/.config/sway/logs/toggle_theme 2>&1
-bindsym $mod+Shift+t exec /home/ian/.config/sway/wallpaper.sh >> /home/ian/.config/sway/logs/wallpaper 2>&1
+bindsym $mod+t       exec $fedora_sericea_config/scripts/toggle_theme.sh >> $fedora_sericea_config/sway/logs/toggle_theme 2>&1
+bindsym $mod+Shift+t exec $fedora_sericea_config/sway/wallpaper.sh >> $fedora_sericea_config/sway/logs/wallpaper 2>&1
 
 # Startup Apps
 exec --no-startup-id flatpak run --branch=stable --arch=x86_64 --command=protonmail-bridge ch.protonmail.protonmail-bridge --no-window

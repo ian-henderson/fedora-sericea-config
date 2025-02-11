@@ -5,6 +5,12 @@ if [[ -n "$TOOLBOX_PATH" ]]; then
 	exit 1
 fi
 
+variables="$HOME/.bashrc.d/variables.sh"
+
+if [[ -f "$variables" ]]; then
+	source "$variables"
+fi
+
 theme_file="$FEDORA_SERICEA_CONFIG/theme"
 
 if [[ -e "$theme_file" ]]; then
