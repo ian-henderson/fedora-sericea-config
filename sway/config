@@ -268,7 +268,7 @@ exec_always --no-startup-id source ~/.bash_profile
 set $fedora_sericea_config /home/ian/Developer/fedora-sericea-config
 
 # Fonts
-font pango:Iosevka Extended 11
+font pango:Ubuntu Sans Mono 11
 exec_always $fedora_sericea_config/scripts/set_fonts.sh >> $fedora_sericea_config/sway/logs/set_fonts 2>&1
 
 exec $fedora_sericea_config/sway/gammastep.sh >> $fedora_sericea_config/sway/logs/gammastep 2>&1

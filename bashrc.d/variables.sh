@@ -23,11 +23,11 @@ export VARIABLES="$BASHRCD/variables.sh"
 export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots"
 
 # Fonts
-export MONOSPACE_FONT="Iosevka Extended"
-export SANS_SERIF_FONT="Iosevka Aile"
-export GTK_FONT_SIZE="11"
+export MONOSPACE_FONT="Ubuntu Sans Mono"
+export SANS_SERIF_FONT="Ubuntu Sans"
+export GTK_FONT_SIZE="14"
 export SWAY_FONT_SIZE="11"
-export TERMINAL_FONT_SIZE="16"
+export TERMINAL_FONT_SIZE="18"
 
 # Themes/Icons
 export ALACRITTY_THEME_DARK="catppuccin_mocha"

@@ -13,6 +13,7 @@ flatpak remote-add --if-not-exists \
 flatpak install -y \
 	ca.desrt.dconf-editor \
 	ch.protonmail.protonmail-bridge \
+	com.brave.Browser \
 	com.calibre_ebook.calibre \
 	com.github.johnfactotum.Foliate \
 	com.github.tchx84.Flatseal \
@@ -21,6 +22,7 @@ flatpak install -y \
 	de.haeckerfelix.Shortwave \
 	io.missioncenter.MissionCenter \
 	me.timschneeberger.GalaxyBudsClient \
+	org.gimp.GIMP \
 	org.gnome.Boxes \
 	org.gnome.Papers \
 	org.gnome.baobab \
@@ -28,3 +30,6 @@ flatpak install -y \
 	org.mozilla.Thunderbird \
 	org.signal.Signal \
 	us.zoom.Zoom
+
+# Sets Brave Flatpak as default browser
+xdg-settings set default-web-browser com.brave.Browser.desktop

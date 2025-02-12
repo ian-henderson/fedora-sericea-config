@@ -11,11 +11,11 @@ fi
 if [[ -n "$TOOLBOX_PATH" ]]; then
 	alias cat="bat -pp --tabs 8 --theme ansi"
 	alias d="sudo dnf"
-	alias ff=fastfetch
 	alias g=git
 	alias vi=nvim
 fi
 
+alias ff=fastfetch
 alias elitebook="ssh ian@elitebook"
 alias raspberrypi="ssh ian@raspberrypi"
 

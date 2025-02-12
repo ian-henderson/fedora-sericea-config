@@ -7,4 +7,4 @@ fi
 
 # TODO: maybe run install_yum_repos.sh before this and include those packages?
 
-rpm-ostree install alacritty code gammastep-indicator
+rpm-ostree install alacritty code fastfetch gammastep-indicator
